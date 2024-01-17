@@ -23,7 +23,7 @@ if __name__ == "__main__":
         for y in range(image.size[1]):
             for x in range(image.size[0]):
                 pixel = image.getpixel((x, y))
-
+                
                 gray_scale = (pixel[0] + pixel[1] + pixel[2]) / 3
                 grey_char = grey_scale_chars[int((len(grey_scale_chars)-1) * gray_scale / 255)]
 
